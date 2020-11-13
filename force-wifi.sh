@@ -5,7 +5,7 @@
 # *                                                           *
 # * Intended to connect an RPi with two wifi interfaces       *
 # *   (wlan0 and wlan1) to two separate wifi networks without *
-# *   breaking Falcon Player.                                 *
+# *   breaking Falcon Player.  Run manually or using cron.    *
 # *                                                           *
 # * Requires iwd and iwctl                                    *
 # *                                                           *
