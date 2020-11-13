@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SSID0="E.131-SSID" # put the E.131 network SSID between the quotes
-SSID1="Home-SSID"      # put your home wifi network SSID between the quotes
+SSID1="Home-SSID"  # put your home wifi network SSID between the quotes
 
 function connect_wlan0 {
   echo "Attempting to connect wlan0 to SSID $SSID0"
