@@ -11,7 +11,7 @@ However, the default configuration of wpa_supplicant + ConnMan make that rather 
 
 I also wanted to enable Bluetooth audio output, but that proved more difficult than I expected, and I probably won't spend any more time on it.  I've settled for a Creative Labs USB sound card with wired output to an FM transmitter (well documented elsewhere).
 
-The following steps should be executed via the command line (I used an ssh shell).  This will likely work best on a new/clean install of Falcon Player.  DO NOT configure the wifi interfaces using Falcon Player's web-interface.  Leave those options blank!
+The following steps should be executed via the command line (I used an ssh shell).  This will likely work best on a new/clean install of Falcon Player using a wired Ethernet interface until the script is working.  DO NOT configure the wifi interfaces using Falcon Player's web-interface.  Leave those options blank!
 
 Fair warning...if you aren't somewhat familiar with the Linux command line, this may prove slightly difficult.
 
