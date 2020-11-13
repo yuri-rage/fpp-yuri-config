@@ -2,6 +2,8 @@
 
 Using Falcon Player on an RPi4 with two wifi interfaces on separate networks
 
+(I'm using a cheap USB wifi dongle with an RT5370 chipset as the second interface)
+
 #### Background:
 I wanted to use an RPi4 with two wifi interfaces to control xLights sequences with Falcon Player.  I wanted one interface to connect to my home wifi network for easy web-interface control from my laptop or smartphone (or possibly home automation), with the other interface dedicated to a separate network to avoid saturating my home network with E.131 packets.
 
