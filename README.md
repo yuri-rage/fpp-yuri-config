@@ -34,5 +34,5 @@ First edit the script to include your network SSIDs (lines 15 and 16 of the scri
     sudo cp force-wifi.sh /usr/local/bin
     sudo chmod 755 /usr/local/bin/force-wifi.sh
     
-#### Step 5: Add a cron job to periodically ensure that both wifi interfaces are connected the way I want
+#### Step 5: Add a cron job to periodically ensure that both wifi interfaces are connected the way we want
 TODO
