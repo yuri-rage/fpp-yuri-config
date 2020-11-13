@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# *************************************************************
+# * force-wifi.sh                                             *
+# *                                                           *
+# * Intended to connect an RPi with two wifi interfaces       *
+# *   (wlan0 and wlan1) to two separate wifi networks without *
+# *   breaking Falcon Player.                                 *
+# *                                                           *
+# * Requires iwd and iwctl                                    *
+# *                                                           *
+# * -- Yuri -- Nov 2020                                       *
+# *************************************************************
+
 SSID0="E.131-SSID" # put the E.131 network SSID between the quotes
 SSID1="Home-SSID"  # put your home wifi network SSID between the quotes
 
