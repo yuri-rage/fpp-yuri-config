@@ -24,7 +24,7 @@ Fair warning...if you aren't somewhat familiar with the Linux command line, this
 #### Step 2: Uninstall wpa_supplicant to avoid conflicts
 ConnMan is still required by Falcon Player, and it will use iwd by default if wpa_supplicant is not found.  I just let Falcon Player run its ConnMan scripts as usual but then force my own connection scheme using the script and cron job (as outlined in the remaining steps).  As of v4.x, this works for me.
 
-`sudo apt-get purge wpa_supplicant`
+`sudo apt-get purge wpasupplicant`
 
 #### Step 3: Use iwctl to connect to your networks
 This step creates profiles that "remember" network keys/passwords for future auto-connection
