@@ -26,6 +26,9 @@ TODO
 #### Step 4: Install my force-wifi script
 First edit the script to include your network SSIDs (lines 3 and 4 of the script).
 
+    cd ~
+    wget https://raw.githubusercontent.com/yuri-rage/fpp-yuri-config/main/force-wifi.sh
+    nano force-wifi.sh # edit the SSIDs here
     sudo cp force-wifi.sh /usr/local/bin
     sudo chmod 755 /usr/local/bin/force-wifi.sh
     
