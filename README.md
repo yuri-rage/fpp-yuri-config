@@ -39,7 +39,7 @@ This brings you to a command prompt within the iwctl shell.  Now execute these c
     station wlan0 get-networks
     station wlan1 get-networks
     
-If successful, you should see your SSIDs listed.  If not, repeat the above steps.  Once you see your networks listed move on to the next commands.
+If successful, you should see your SSIDs listed.  If not, repeat the above steps.  Once you see your networks listed, execute these commands to connect them manually.
 
     station wlan0 connect <your E.131 SSID here>
     <enter network key/password>
