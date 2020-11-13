@@ -52,9 +52,21 @@ First edit the script to include your network SSIDs (lines 15 and 16 of the scri
 
     cd ~
     wget https://raw.githubusercontent.com/yuri-rage/fpp-yuri-config/main/force-wifi.sh
-    nano force-wifi.sh # edit the SSIDs here
+    nano force-wifi.sh # edit the SSIDs here and save with Ctrl-o Ctrl-x
     sudo mv force-wifi.sh /usr/local/bin
     sudo chmod 755 /usr/local/bin/force-wifi.sh
     
-#### Step 5: Add a cron job to periodically ensure that both wifi interfaces are connected the way we want
-TODO
+#### Step 5: Add cron jobs to periodically ensure that both wifi interfaces are connected the way we want
+
+    sudo crontab -e
+    
+This brings you to a text editor to edit cron jobs.  Add the following two lines and save.
+
+    @reboot /usr/local/bin/force-wifi.sh > /var/log/force-wifi.log 2>&1
+    * * * * * /usr/local/bin/force-wifi.sh > /var/log/force-wifi.log 2>&1
+
+#### Now reboot!
+
+The RPi should be connected to the specified wifi networks.  To see the latest output/errors from the script, you can execute:
+
+    sudo cat /var/log/force-wifi.log
