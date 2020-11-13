@@ -16,7 +16,10 @@ The following steps should be executed via the command line (I used an ssh shell
 Fair warning...if you aren't somewhat familiar with the Linux command line, this may prove slightly difficult.
 
 #### Step 1: Install iwd
-`sudo apt-get install iwd`
+
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install iwd
 
 #### Step 2: Uninstall wpa_supplicant to avoid conflicts
 ConnMan is still required by Falcon Player, and it will use iwd by default if wpa_supplicant is not found.  I just let Falcon Player run its ConnMan scripts as usual but then force my own connection scheme using the script and cron job (as outlined in the remaining steps).  As of v4.x, this works for me.
