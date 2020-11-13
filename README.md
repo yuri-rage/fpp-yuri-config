@@ -67,6 +67,6 @@ This brings you to a text editor to edit cron jobs.  Add the following two lines
 
 #### Now reboot!
 
-The RPi should be connect automatically to the specified wifi networks.  To see the latest output/errors from the script, you can execute:
+The RPi should connect automatically to the specified wifi networks.  To see the latest output/errors from the script, you can execute:
 
     sudo cat /var/log/force-wifi.log
