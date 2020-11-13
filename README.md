@@ -7,6 +7,8 @@ I wanted to use an RPi4 with two wifi interfaces to control xLights sequences wi
 
 However, the default configuration of wpa_supplicant + ConnMan make that rather difficult. ConnMan is great for simple wifi connectivity.  Adding a second interface seems quite problematic, and I never had any success getting ConnMan to automatically connect the second interface.  So, I opted to leave Falcon Player's wifi connection scheme completely blank and script some iwd/iwctl commands to "force" the issue to my liking.
 
+The following steps should be executed via the command line (I used an ssh shell).  Fair warning...if you aren't somewhat familiar with the Linux command line, this may prove slightly difficult.
+
 #### Step 1: Install iwd
 `sudo apt-get install iwd`
 
