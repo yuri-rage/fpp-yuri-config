@@ -25,6 +25,7 @@ TODO
 
 #### Step 4: Install my force-wifi script
 First edit the script to include your network SSIDs (lines 3 and 4 of the script).
+
     sudo cp force-wifi.sh /usr/local/bin
     sudo chmod 755 /usr/local/bin/force-wifi.sh
     
