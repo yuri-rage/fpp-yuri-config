@@ -45,6 +45,7 @@ If successful, you should see your SSIDs listed.  If not, repeat the above steps
     <enter network key/password>
     station wlan1 connect <your home SSID here>
     <enter network key/password>
+    quit
 
 #### Step 4: Install my force-wifi script
 First edit the script to include your network SSIDs (lines 15 and 16 of the script).
@@ -52,7 +53,7 @@ First edit the script to include your network SSIDs (lines 15 and 16 of the scri
     cd ~
     wget https://raw.githubusercontent.com/yuri-rage/fpp-yuri-config/main/force-wifi.sh
     nano force-wifi.sh # edit the SSIDs here
-    sudo cp force-wifi.sh /usr/local/bin
+    sudo mv force-wifi.sh /usr/local/bin
     sudo chmod 755 /usr/local/bin/force-wifi.sh
     
 #### Step 5: Add a cron job to periodically ensure that both wifi interfaces are connected the way we want
