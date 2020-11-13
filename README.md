@@ -13,9 +13,13 @@ However, the default configuration of wpa_supplicant + ConnMan make that rather 
 #### Step 2: Uninstall wpa_supplicant to avoid conflicts
 `sudo apt-get purge wpa_supplicant`
 
-#### Step 3: Install my force-wifi script
+#### Step 3: Use iwctl to connect to your networks
+This step creates profiles that "remember" network keys/passwords for future auto-connection
+TODO
+
+#### Step 4: Install my force-wifi script
     sudo cp force-wifi.sh /usr/local/bin
     sudo chmod 755 /usr/local/bin/force-wifi.sh
     
-#### Step 4: Add a cron job to periodically ensure that both wifi interfaces are connected the way I want
+#### Step 5: Add a cron job to periodically ensure that both wifi interfaces are connected the way I want
 TODO
