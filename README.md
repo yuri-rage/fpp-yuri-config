@@ -26,7 +26,7 @@ This step creates profiles that "remember" network keys/passwords for future aut
 TODO
 
 #### Step 4: Install my force-wifi script
-First edit the script to include your network SSIDs (lines 3 and 4 of the script).
+First edit the script to include your network SSIDs (lines 15 and 16 of the script).
 
     cd ~
     wget https://raw.githubusercontent.com/yuri-rage/fpp-yuri-config/main/force-wifi.sh
