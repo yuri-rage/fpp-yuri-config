@@ -24,11 +24,27 @@ Fair warning...if you aren't somewhat familiar with the Linux command line, this
 #### Step 2: Uninstall wpa_supplicant to avoid conflicts
 ConnMan is still required by Falcon Player, and it will use iwd by default if wpa_supplicant is not found.  I just let Falcon Player run its ConnMan scripts as usual but then force my own connection scheme using the script and cron job (as outlined in the remaining steps).  As of v4.x, this works for me.
 
-`sudo apt-get purge wpasupplicant`
+    sudo apt-get purge wpasupplicant
+    sudo apt-get autoremove
 
 #### Step 3: Use iwctl to connect to your networks
 This step creates profiles that "remember" network keys/passwords for future auto-connection
-TODO
+
+    sudo iwctl
+    
+This brings you to a command prompt within the iwctl shell.  Now execute these commands:
+
+    station wlan0 scan
+    station wlan1 scan
+    station wlan0 get-networks
+    station wlan1 get-networks
+    
+If successful, you should see your SSIDs listed.  If not, repeat the above steps.  Once you see your networks listed move on to the next commands.
+
+    station wlan0 connect <your E.131 SSID here>
+    <enter network key/password>
+    station wlan1 connect <your home SSID here>
+    <enter network key/password>
 
 #### Step 4: Install my force-wifi script
 First edit the script to include your network SSIDs (lines 15 and 16 of the script).
