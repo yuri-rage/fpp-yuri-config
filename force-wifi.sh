@@ -68,7 +68,7 @@ else
   connect_wlan1
 fi
 
-echo -e "\n"
+echo
 ip addr show | awk '/inet.*wlan/ { sub(/\/24/, ""); print $7, $2 }'
 
 echo -e "\n***** Exiting force-wifi.sh *****\n"
