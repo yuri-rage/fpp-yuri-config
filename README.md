@@ -15,6 +15,8 @@ The following steps should be executed via the command line (I used an ssh shell
 
 Fair warning...if you aren't somewhat familiar with the Linux command line, this may prove slightly difficult.
 
+Additionally, I'm using DHCP on both wifi networks rather than a static IP configuration.  I use address reservation on the DHCP servers to ensure consistency in connections.  A network with static IPs may require a little more iwd configuration.
+
 #### Step 1: Install iwd
 
     sudo apt-get update
